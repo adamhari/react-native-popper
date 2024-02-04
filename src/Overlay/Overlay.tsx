@@ -78,8 +78,8 @@ export function Overlay(props: IOverlayProps) {
             styles,
             {
               marginTop: statusBarTranslucent
-                ? undefined
-                : StatusBar.currentHeight,
+                ? StatusBar.currentHeight
+                : undefined,
             },
           ]}
           pointerEvents="box-none"
